@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,25 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party form</title>
+	
 </head>
 <body>
     <h1>Party Form</h1>
     <form>
 
-        <label for="fname">First name*:</label><br>
-        <input type="text" id="fname"><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" required id="fname"><br>
 
-        <label for="lname">Surname*:</label><br>
-        <input type="text" id="lname"><br>
+        <label for="lname">Surname:</label><br>
+        <input type="text" required id="lname"><br>
 
-        <label for="email">Email*:</label><br>
-        <input type="email" id="email"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" required id="email"><br>
 
-        <label for="pass">Password*: </label><br>
-        <input type="password" name="" id="pass"><br>
+        <label for="pass">Password: </label><br>
+        <input type="password" required name="" id="pass"><br>
 
-        <label for="dob">DOB*: </label><br>
-        <input type="date" name="" id="dob"><br><br>
+        <label for="dob">DOB: </label><br>
+        <input type="date" name="" required id="dob"><br><br>
 
         <label>Gender: </label><br>
         <label for="r1">Male </label>
@@ -31,53 +33,46 @@
         <label for="r2">Female </label>
         <input type="radio" id="r2" name="any"> <br><br>
 
-        <label>Select food: </label><br>
-        <input type="checkbox" id="1" name="1">
-        <label for="1">Pizza</label><br>
-        <input type="checkbox" id="2" name="2">
-        <label for="2">Burger</label><br>
-        <input type="checkbox" id="3" name="3">
-        <label for="3">Cupcakes</label><br><br>
+       
 
-        <label>Select activity: </label><br>
-        <input type="checkbox" id="1" name="1">
-        <label for="1">Chess</label><br>
-        <input type="checkbox" id="2" name="2">
-        <label for="2">Pool</label><br>
-        <input type="checkbox" id="3" name="3">
-        <label for="3">Bowling</label><br><br>
+        <label>Choose activity: </label><br>
+        <select name="Activity">
+			<option value="volvo">Ludo</option>
+			<option value="saab">Paintball</option>
+			<option value="opel">Bowling</option>
+		  </select> <br><br>
+		
+		 <label>Choose food: </label><br>
+        <select name="Food">
+			<option value="volvo">Pizza</option>
+			<option value="saab">Burger</option>
+			<option value="opel">Hotdog</option>
+			<option value="audi">Lasagna</option>
+			<option value="audi">Apple pie</option>
+		  </select> <br><br>
         
-        <label>Select table to sit: </label><br>
-        <label for="t1">Table A </label>
-        <input type="radio" id="t1" name="any">
-        <label for="t2">Table B </label>
-        <input type="radio" id="t2" name="any">
-        <label for="c2">Table C </label>
-        <input type="radio" id="t2" name="any">
-        <label for="c2">Table D </label>
-        <input type="radio" id="t2" name="any">
-        <label for="c2">Table E </label>
-        <input type="radio" id="t2" name="any">
-        <label for="c2">Table F </label>
-        <input type="radio" id="t2" name="any"> <br><br>
+        <label>Choose table: </label><br>
+          <select name="Tables">
+			<option value="volvo">A</option>
+			<option value="saab">H</option>
+			<option value="opel">M</option>
+			<option value="audi">E</option>
+			<option value="audi">D</option>
+		  </select> <br><br>
 
         <label>Select a color: </label><br>
-        <label for="c1">Purple</label>
-        <input type="radio" id="c1" name="any1">
-        <label for="c2">Black </label>
-        <input type="radio" id="c2" name="any1"> 
-        <label for="c2">Red </label>
-        <input type="radio" id="c2" name="any1"> 
-        <label for="c2">Green</label>
-        <input type="radio" id="c2" name="any1"> 
-        <label for="c2">Pink</label>
-        <input type="radio" id="c2" name="any1">
-        <label for="c2">White</label>
-        <input type="radio" id="c2" name="any1"> <br><br>
+        <select name="Colours">
+			<option value="volvo">Black</option>
+			<option value="saab">White</option>
+			<option value="opel">Blue</option>
+			<option value="audi">Red</option>
+			<option value="audi">Yellow</option>
+		  </select> <br><br>
         
-        <p>Click on the "Choose File" button to upload a file<br>  
+        <p>Upload a file<br>  
         <input type="file" id=""
         name="">
+		<br><br>
         <input type="submit">
 
        
